@@ -1,0 +1,2 @@
+O objetivo desta aplicação centra-se na leitura do valor de temperatura pelo sensor TC74 e a representação desse valor num LED vermelho que a partir dos 24 graus acende e consoante o aumento da temperatura, a intensidade do brilho aumenta também.
+A comunicação com o sensor é feita por I2C em que temos as ligações feitas na placa através dos GPIO's destinados para este periférico e a intensidade do LED é manipulada através de funções de PWM.

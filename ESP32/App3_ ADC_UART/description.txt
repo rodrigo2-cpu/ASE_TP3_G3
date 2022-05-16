@@ -1,0 +1,2 @@
+O objetivo desta aplicação centra-se na leitura de valores do potenciómetro ligado ao pin da ADC (GPIO34) e converter esse mesmo valor para calcular a voltagem que depois é mandada para a UART. 
+O uso de power management foi aplicado nesta aplicação de forma a que o kit ESP32 encontra-se em light sleep mode e é acordado de 4 em 4 segundos por um timer.

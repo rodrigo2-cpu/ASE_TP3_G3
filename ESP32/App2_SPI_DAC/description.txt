@@ -1,0 +1,4 @@
+O objetivo desta aplicação centra-se na escrita de valores aleatórios na memória eeprom externa ao kit ESP32 que de seguida vão ser lidos. Os valores lido vão ser enviados para a DAC através do GPIO26.
+O circuito da memória com o kit foi montado pelos GPIO's dedicados ao controlador VSPI.
+
+Configurações de SPI foram disponibilizadas pelo TP2_G3.
