@@ -16,10 +16,13 @@ client = tweepy.Client(consumer_key=API_KEY,
                         access_token=ACCESS_KEY,
                         access_token_secret=ACCESS_SECRET)
 
+# Select the channel
 i2c_ch = 1
 
+# Select the sensor address in the bus
 i2c_addr = 0x4d
 
+# Select a temperature register
 reg_temp = 0x00
 
 old_temp = 0
@@ -64,6 +67,8 @@ while True:
     if(abs(temperature - old_temp) >= 3):
         text = "Currently "+str(round(temperature,2))+"ºC in this room."
         old_temp = temperature
+        
+        # Publish a tweet
         write_tweet(text)
     print(round(temperature, 2), "ºC")
     time.sleep(1)
