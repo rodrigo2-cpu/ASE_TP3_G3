@@ -1,1 +1,2 @@
 O objetivo desta aplicação centra-se na deteção e contagem de pessoas, de forma a fazer uso do desempenho do GPU.
+Contamos ainda com um logger file com a hora e data da deteção.
